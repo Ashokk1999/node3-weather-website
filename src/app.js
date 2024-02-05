@@ -70,7 +70,7 @@ app.get('/weather',(req,res)=>{
             }
 
             const forecastInfo = "The current temparature is "+ forecastData.temperature + " and it feels like "+
-            forecastData.feelslike + ". The weather is "+ forecastData.weather_description
+            forecastData.feelslike + " The humidity is "+ forecastData.humidity + "%. The weather is "+ forecastData.weather_description
             res.send({
                 forecast: forecastInfo ,
                 location,
